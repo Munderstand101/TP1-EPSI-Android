@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">EPSI-Android</string>
+
+
+    <!-- -->
+    <string name="info">Info</string>
+    <string name="products">Produits</string>
+
 </resources>
