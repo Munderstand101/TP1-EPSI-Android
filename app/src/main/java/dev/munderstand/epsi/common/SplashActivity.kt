@@ -1,4 +1,4 @@
-package dev.munderstand.epsi
+package dev.munderstand.epsi.common
 
 import android.content.Intent
 import android.content.res.Configuration
@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
 import android.widget.ImageView
+import dev.munderstand.epsi.R
 
 class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -14,7 +15,7 @@ class SplashActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
         Handler(Looper.getMainLooper()).postDelayed(Runnable {
-            val newIntent= Intent(application,HomeActivity::class.java)
+            val newIntent= Intent(application, HomeActivity::class.java)
             startActivity(newIntent)
             finish()
         },2000)

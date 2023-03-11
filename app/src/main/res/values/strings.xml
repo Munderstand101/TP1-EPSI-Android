@@ -5,5 +5,12 @@
     <!-- -->
     <string name="info">Info</string>
     <string name="products">Produits</string>
+    <string name="student_title_student">Students</string>
+    <string name="liste_etudiants">Liste des etudiants </string>
+    <string name="description">Description :</string>
+    <string name="liste_produits">Liste des produis du rayon choisit</string>
+    <string name="liste_categs">Liste des Rayons</string>
+    <string name="epsi_url">https://www.epsi.fr/</string>
+    <string name="nom_etudiant">nom</string>
 
 </resources>

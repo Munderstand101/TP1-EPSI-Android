@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textViewName"
+            style="@style/Theme.Base.TextViewFlat"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:gravity="center"
+            android:text="@string/nom_etudiant"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
+

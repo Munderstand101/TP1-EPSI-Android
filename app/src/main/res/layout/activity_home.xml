@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".HomeActivity">
+    tools:context=".common.HomeActivity">
 
     <include
         layout="@layout/layout_header"
@@ -32,15 +32,13 @@
             <Button
                 android:id="@+id/btnInfo"
                 style="@style/Theme.Base.Button"
-                android:layout_height="125dp"
-                android:background="@color/blue_a1"
+                android:layout_height="120dp"
                 android:text="@string/info" />
 
             <Button
                 android:id="@+id/btnProducts"
                 style="@style/Theme.Base.Button"
-                android:layout_height="125dp"
-                android:background="@color/blue_a1"
+                android:layout_height="120dp"
                 android:text="@string/products" />
 
         </LinearLayout>

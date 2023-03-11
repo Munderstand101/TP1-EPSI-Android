@@ -1,4 +1,4 @@
-package dev.munderstand.epsi
+package dev.munderstand.epsi.common
 
 import android.content.res.Configuration
 import android.os.Bundle
@@ -7,37 +7,39 @@ import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import dev.munderstand.epsi.R
 
 open class BaseActivity: AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        Log.i("Epsi","################## onCreate :"+javaClass.simpleName)
+
+        Log.i("DEBUG","################## onCreate :"+javaClass.simpleName)
     }
 
     override fun onStart() {
         super.onStart()
-        Log.i("Epsi","################## onStart :"+javaClass.simpleName)
+        Log.i("DEBUG","################## onStart :"+javaClass.simpleName)
     }
 
     override fun onResume() {
         super.onResume()
-        Log.i("Epsi","################## onResume :"+javaClass.simpleName)
+        Log.i("DEBUG","################## onResume :"+javaClass.simpleName)
     }
 
     override fun onPause() {
         super.onPause()
-        Log.i("Epsi","################## onPause :"+javaClass.simpleName)
+        Log.i("DEBUG","################## onPause :"+javaClass.simpleName)
     }
 
     override fun onStop() {
         super.onStop()
-        Log.i("Epsi","################## onStop :"+javaClass.simpleName)
+        Log.i("DEBUG","################## onStop :"+javaClass.simpleName)
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.i("Epsi","################## onDestroy :"+javaClass.simpleName)
+        Log.i("DEBUG","################## onDestroy :"+javaClass.simpleName)
     }
 
     fun setHeaderTxt(txt: String) {
@@ -67,13 +69,20 @@ open class BaseActivity: AppCompatActivity() {
         tv_title.setTextColor(resources.getColor(R.color.white))
 
 
-        val imageViewBack = findViewById<ImageView>(R.id.iv_Left_Arrow)
-        imageViewBack.visibility = View.VISIBLE
-        imageViewBack.setImageDrawable(resources.getDrawable(R.drawable.ic_prev_night))
-        imageViewBack.setOnClickListener(View.OnClickListener {
+        val ivLeftArrow = findViewById<ImageView>(R.id.iv_Left_Arrow)
+        val imageRightArrow = findViewById<ImageView>(R.id.iv_Right_Arrow)
+
+   //     ivLeftArrow.visibility = View.VISIBLE
+       // imageRightArrow.visibility = View.VISIBLE
+
+        ivLeftArrow.setImageDrawable(resources.getDrawable(R.drawable.ic_prev_night))
+        imageRightArrow.setImageDrawable(resources.getDrawable(R.drawable.ic_edit_night))
+
+        ivLeftArrow.setOnClickListener(View.OnClickListener {
             finish()
         })
     }
+
 
 
 }

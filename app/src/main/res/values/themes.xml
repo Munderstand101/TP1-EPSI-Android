@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.Base" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimary">@color/Deep_Ocean_Blue</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
@@ -14,47 +14,43 @@
         <!-- Customize your theme here. -->
     </style>
 
-
-
-    <style name="Theme.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/white</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
-        <!-- Customize your theme here. -->
+    <style name="Theme.Base.TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/Deep_Ocean_Blue</item>
+    </style>
+    <style name="Theme.Base.TextViewLink" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/Sky_Blue</item>
     </style>
 
+    <style name="Theme.Base.TextViewFlat" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/flat_radius_shape</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="Theme.Splash" parent="Theme.MaterialComponents.DayNight.NoActionBar" />
 
     <style name="Theme.Base.Button" parent="TextAppearance.AppCompat.Widget.Button">
         <item name="android:textSize">22sp</item>
         <item name="android:textColor">@color/white</item>
-
-        <item name="android:background">@drawable/flat_white_black_button_background</item>
+        <item name="android:background">@drawable/flat_radius_shape</item>
         <item name="android:layout_width">170dp</item>
         <item name="android:layout_height">70dp</item>
         <item name="android:layout_gravity">center_horizontal</item>
         <item name="android:layout_marginTop">50dp</item>
-
     </style>
-
-
-        <!-- Flat White Button Style with Black Border 2dp -->
-        <style name="FlatWhiteBlackButton" parent="Widget.AppCompat.Button">
-            <item name="android:textSize">22sp</item>
-            <item name="android:textColor">@color/white</item>
-            <item name="android:background">@drawable/flat_white_black_button_background</item>
-            <item name="android:layout_width">170dp</item>
-            <item name="android:layout_height">70dp</item>
-            <item name="android:layout_gravity">center_horizontal</item>
-            <item name="android:layout_marginTop">50dp</item>
-        </style>
-
 
 
 
