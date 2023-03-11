@@ -2,20 +2,37 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/epsi_icon"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.EPSIAndroid"
+        android:theme="@style/Theme.Base"
         tools:targetApi="31">
         <activity
-            android:name=".HomeActivity"
+            android:name=".products.ProductDetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".products.ProductsListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".products.CategoriesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".students.StudentInfoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".students.GroupInfosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".common.HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".common.SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.Splash">
             <intent-filter>
