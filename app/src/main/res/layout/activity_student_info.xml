@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".students.StudentInfoActivity">
+
+        <include
+            layout="@layout/layout_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp"
+                >
+
+
+                <ImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="244dp"
+                    android:layout_height="217dp"
+                    android:adjustViewBounds="true"
+                    android:layout_gravity="center_horizontal"
+                    app:srcCompat="@drawable/ic_launcher_background" />
+
+
+                <TextView
+                    android:id="@+id/tv_info"
+                    style="@style/Theme.Base.TextView"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Info Etudiant"
+
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tv_nomprenom"
+                    style="@style/Theme.Base.TextView"
+
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Nom et prenom"
+
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/tv_email"
+                    style="@style/Theme.Base.TextView"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:text="email"
+
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_groupe"
+                    style="@style/Theme.Base.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:text="groupe"
+                    android:textSize="16sp" />
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/Theme.Base.TextViewLink"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:text="@string/epsi_url"
+                    android:autoLink="web"
+                    android:onClick="onLinkClicked"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+</LinearLayout>
